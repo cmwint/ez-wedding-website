@@ -32,6 +32,11 @@
   display: block;
   color: white;
   font-size: 20px;
+  transition: 200ms;
+}
+
+.details__single a:hover {
+  color: #c3dc8e;
 }
 
 .details__single img {
