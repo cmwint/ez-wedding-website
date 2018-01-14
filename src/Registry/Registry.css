@@ -27,4 +27,5 @@
 
 .registry__inner img {
   max-height: 100px;
+  max-width: 100%;
 }

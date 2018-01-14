@@ -1,6 +1,6 @@
 .intro {
   background-color: #f5f5f5;
-  padding: 80px 50px;
+  padding: 40px 20px;
   text-align: center;
   font-size: 25px;
 }
@@ -16,4 +16,9 @@
   fill: #c3dc8e;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 400px) {
+  .intro {
+    padding: 80px 50px;
+  }
 }
