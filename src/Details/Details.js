@@ -11,7 +11,7 @@ class Details extends Component {
         <div className="details__inner">
           <div className="details__single">
             <div className="details__image">
-              <img src={chapelSVG} />
+              <img src={chapelSVG} alt='Wedding chapel' />
             </div>
             <h2>The Ceremony</h2>
             <h4>5:00pm</h4>
@@ -23,7 +23,7 @@ class Details extends Component {
           </div>
           <div className="details__single">
             <div className="details__image">
-              <img src={glassesSVG} />
+              <img src={glassesSVG} alt='Wedding glasses' />
             </div>
             <h2>The Reception</h2>
             <h4>5:45pm</h4>
@@ -31,7 +31,7 @@ class Details extends Component {
           </div>
           <div className="details__single">
             <div className="details__image">
-              <img src={recordSVG} />
+              <img src={recordSVG} alt='Old school music record' />
             </div>
             <h2>Music</h2>
             <h4>7:00pm</h4>

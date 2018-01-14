@@ -11,7 +11,7 @@ class Registry extends Component {
           <p>Please view our registry at these places</p>
           <div className="registry__wrap">
             <a href="https://www.amazon.com/wedding/emily-winthrop-zach-ancona-arvada-july-2018/registry/38N6R51GA7YD6">
-              <img src={amazonLogo} />
+              <img src={amazonLogo} alt='Amazon logo' />
             </a>
           </div>
         </div>

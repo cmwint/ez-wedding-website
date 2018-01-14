@@ -7,14 +7,22 @@
 .details__inner {
   max-width: 1000px;
   margin: auto;
-  display: flex;
-  justify-content: center;
   text-align: center;
 }
 
+@media (min-width: 850px) {
+  .details__inner {
+    display: flex;
+    justify-content: center;
+  }
+  .details__single {
+    margin: 0 1%;
+  }
+}
+
 .details__single {
-  width: 30%;
-  margin: 0 1%;
+  width: 80%;
+  margin: 40px auto;
 }
 
 .details__single h2 {

@@ -30,7 +30,7 @@ class App extends Component {
           <Image />
         </div>
         <footer>
-          Copyright © Emily & Zach. Website made by Corinne Winthrop.
+          Copyright © Emily & Zach. Photography by ..........
         </footer>
       </div>
     );
