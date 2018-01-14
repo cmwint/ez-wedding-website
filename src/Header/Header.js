@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import image from './header_img.jpg';
 import './Header.css';
 
-var headerBG = {
+const headerBG = {
   backgroundImage: 'url(' + image + ')',
 };
 

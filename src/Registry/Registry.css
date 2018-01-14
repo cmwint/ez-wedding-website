@@ -1,0 +1,30 @@
+.registry {
+  background-color: #999;
+  padding: 80px 50px;
+}
+
+.registry__inner {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.registry__inner h2 {
+  margin: 0;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.registry__inner p {
+  font-size: 20px;
+  color: white;
+}
+
+.registry__wrap {
+  margin-top: 60px;
+}
+
+.registry__inner img {
+  max-height: 100px;
+}

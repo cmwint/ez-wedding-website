@@ -1,0 +1,19 @@
+.intro {
+  background-color: #f5f5f5;
+  padding: 80px 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.intro__inner {
+  max-width: 600px;
+  margin: auto;
+}
+.intro span {
+  font-size: 40px;
+}
+.intro svg {
+  display: block;
+  fill: #c3dc8e;
+  margin: auto;
+  text-align: center;
+}

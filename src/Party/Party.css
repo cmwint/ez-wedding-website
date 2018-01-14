@@ -1,0 +1,10 @@
+.party {
+  background-color: #f5f5f5;
+  padding: 80px 50px;
+}
+
+.party__inner {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
