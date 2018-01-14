@@ -5,6 +5,7 @@ import Details from './Details/Details';
 import Party from './Party/Party';
 import Registry from './Registry/Registry';
 import Image from './Image/Image';
+import Facts from './Facts/Facts';
 import './App.css';
 
 class App extends Component {
@@ -26,11 +27,14 @@ class App extends Component {
         <div className="Wedding-registry">
           <Registry />
         </div>
+        <div className="Wedding-facts">
+          <Facts />
+        </div>
         <div className="Wedding-image">
           <Image />
         </div>
         <footer>
-          Copyright © Emily & Zach. Photography by ..........
+          Copyright © Emily & Zach. Photography by Haley Eickmann.
         </footer>
       </div>
     );
