@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class Facts extends Component {
   render() {
     return (
-      <Carousel>
+      <Carousel showArrows={false} infiniteLoop autoPlay>
           <div>
               <p>Zach and Emily have three cats, Remy, Joe and Penny</p>
           </div>
