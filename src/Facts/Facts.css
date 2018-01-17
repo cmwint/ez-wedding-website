@@ -1,8 +1,16 @@
 
-.Wedding-facts {
-  background: #f5f5f5;  
+.facts {
+  background: #f5f5f5;
+  padding-top: 60px;
 }
 
+.facts h2 {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+  color: #5a5a5a;
+  text-transform: uppercase;
+}
 
 .carousel {
   position: relative;
@@ -96,19 +104,22 @@
 .carousel .slide {
   min-width: 100%;
   margin: 0;
-  padding: 60px;
+  padding: 0 60px 60px;
   position: relative;
   font-size: 25px;
   text-align: center;
 }
 .carousel .control-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   margin: 10px 0;
   text-align: center;
   width: 100%;
 }
 @media (min-width: 960px) {
+  .carousel .slide {
+    padding: 0 60px 90px;
+  }
   .carousel .control-dots {
     bottom: 20px;
   }
