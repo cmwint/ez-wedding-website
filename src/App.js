@@ -6,6 +6,7 @@ import Party from './Party/Party';
 import Registry from './Registry/Registry';
 import Image from './Image/Image';
 import Facts from './Facts/Facts';
+import Form from './Form/Form';
 import './App.css';
 
 class App extends Component {
@@ -32,6 +33,9 @@ class App extends Component {
         </div>
         <div className="Wedding-image">
           <Image />
+        </div>
+        <div className="Wedding-form">
+          <Form />
         </div>
         <footer>
           Copyright © Emily & Zach. Photography by Haley Eickmann.
