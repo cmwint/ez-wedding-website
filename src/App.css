@@ -5,7 +5,8 @@
 footer {
   padding: 20px;
   font-size: 12px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.025em;
   text-align: center;
-  color: #999;
+  color: white;
+  background-color: #999;
 }

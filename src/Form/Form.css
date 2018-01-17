@@ -1,0 +1,16 @@
+
+.form {
+  background: #f5f5f5;
+  padding: 40px 20px;
+}
+.form__inner {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .form {
+    padding: 80px 50px;
+  }
+}
