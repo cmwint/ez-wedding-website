@@ -9,6 +9,13 @@
   text-align: center;
 }
 
+.form__names {
+  position: relative;
+}
+.form__names label span {
+  position: absolute;
+}
+
 @media (min-width: 400px) {
   .form {
     padding: 80px 50px;

@@ -5,8 +5,25 @@ import './Form.css';
   constructor(props) {
     super(props);
     this.state = {
-      attendingOption: 'yes'
+      attendingOption: 'yes',
+      activeFirst: false,
+      activeLast: false
     };
+  }
+
+  handleBlurEvent = (e) => {
+    return (e.target.name === 'firstname') ? this.setState({activeFirst: false}) : this.setState({activeLast: false})
+  }
+  
+  handleFocusEvent = (e) => {
+    return (e.target.name === 'firstname') ? this.setState({activeFirst: true}) : this.setState({activeLast: true})
+  }
+  handleInputFilled = (e) => {
+    if(e.target.value !== '') {
+      return (e.target.name === 'firstname') ? this.setState({activeFirst: true}) : this.setState({activeLast: true})
+    } else {
+      return (e.target.name === 'firstname') ? this.setState({activeFirst: false}) : this.setState({activeLast: false})
+    }
   }
 
   handleOptionChange = (e) => {
@@ -21,13 +38,23 @@ import './Form.css';
         <div className="form__inner">
           <form>
             <div className="form__names">
-              <label>
+              <label className={this.state.activeFirst ? 'active' : ''}>
                 <span>First name</span>
-                <input type="text" name="firstname" />
+                <input
+                  type="text"
+                  name="firstname"
+                  onBlur={this.handleBlurEvent}
+                  onFocus={this.handleFocusEvent}
+                  onChange={this.handleInputFilled} />
               </label>
-              <label>
+              <label className={this.state.activeLast ? 'active' : ''}>
                 <span>Last name</span>
-                <input type="text" name="lastname" />
+                <input
+                  type="text"
+                  name="lastname"
+                  onBlur={this.handleBlurEvent}
+                  onFocus={this.handleFocusEvent}
+                  onChange={this.handleInputFilled} />
               </label>
             </div>
             <div className="form__extra">
