@@ -63,30 +63,31 @@ import './Form.css';
                   onChange={this.handleInputFilled} />
               </label>
             </div>
-            <div className="form__extra">
-              <div className="form__attendance">
-                <span>Will you be attending?</span>
-                <label className={this.state.attendingOption === 'yes' ? 'active' : ''}>
-                  <input type="radio"
-                  name="attendance" value="yes"
-                  onChange={this.handleOptionChange}/>
-                  <span>Yes</span>
-                </label>
-                <label className={this.state.attendingOption === 'no' ? 'active' : ''}>
-                  <input type="radio"
-                  name="attendance" value="no"
-                  onChange={this.handleOptionChange}/>
-                  <span>No</span>
+            <div className="form__attendance">
+              <span>Will you be attending?</span>
+              <label className={this.state.attendingOption === 'yes' ? 'active' : ''}>
+                <input type="radio"
+                name="attendance" value="yes"
+                onChange={this.handleOptionChange}/>
+                <span>Yes</span>
+              </label>
+              <label className={this.state.attendingOption === 'no' ? 'active' : ''}>
+                <input type="radio"
+                name="attendance" value="no"
+                onChange={this.handleOptionChange}/>
+                <span>No</span>
+              </label>
+            </div>
+            {this.state.attendingOption === 'yes' &&
+              <div className="form__number">
+                <label>
+                  <span>How many guests will be in your party? *</span>
+                  <input required type="number" name="guests" min="1" max="10" />
                 </label>
               </div>
-              {this.state.attendingOption === 'yes' &&
-                <div className="form__number">
-                  <label>
-                    <span>How many guests will be in your party? *</span>
-                    <input required type="number" name="guests" min="1" max="10" />
-                  </label>
-                </div>
-              }
+            }
+            <div className="form__memo">
+              <textarea name="memo" placeholder='Send us a note! (optional)'></textarea>
             </div>
             <button type="submit" form="rsvp" value="Submit">Submit</button>
           </form>

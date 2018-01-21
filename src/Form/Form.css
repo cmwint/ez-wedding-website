@@ -67,7 +67,6 @@
 .form__names input {
   padding: 10px;
   border-radius: 5px;
-  outline: none;
   border: none;
   background: #e8ebed;
   color: #5a5a5a;
@@ -75,13 +74,13 @@
   width: calc(100% - 20px);
 }
 
-/*
-****** Extra ******
-*/
-
-.form__extra {
-  margin: 0 15px;
+.form__names input:focus {
+  outline-color: #c3dc8e;
 }
+
+/*
+****** Attendance ******
+*/
 
 .form__attendance {
   margin-bottom: 20px;
@@ -127,7 +126,7 @@
   color: #c3dc8e;
 }
 
-.form__number input[type=number] {
+.form__number input {
   border: none;
   background: #e8ebed;
   padding: 7px;
@@ -137,9 +136,37 @@
   color: #5a5a5a;
 }
 
+.form__number input:focus {
+  outline-color: #c3dc8e
+}
+
 .form__number span {
   display: block;
   margin-bottom: 10px;
+}
+
+/*
+****** Memo ******
+*/
+.form__memo {
+  margin-top: 30px;
+}
+
+.form__memo textarea {
+  border: none;
+  background: #e8ebed;
+  border-radius: 5px;
+  resize: none;
+  height: 70px;
+  width: calc(100% - 20px);
+  font-size: 20px;
+  padding: 10px;
+  color: #5a5a5a;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.form__memo textarea:focus {
+  outline-color: #c3dc8e;
 }
 
 .form button {
@@ -173,10 +200,6 @@
     margin-left: 10px;
   }
 
-  .form__names label:first-child {
-    margin-right: 0;
-  }
-
   .form__names input {
     min-width: 220px;
     width: auto;
@@ -194,6 +217,10 @@
   .form__number span {
     display: inline;
     margin-bottom: 0px;
+  }
+
+  .form__memo textarea {
+    width: 400px;
   }
 }
 
