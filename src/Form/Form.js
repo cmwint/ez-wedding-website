@@ -80,10 +80,12 @@ import './Form.css';
                 </label>
               </div>
               {this.state.attendingOption === 'yes' &&
-                <label>
-                  <span>How many guests will be in your party? *</span>
-                  <input required type="number" name="guests" min="1" max="10" />
-                </label>
+                <div className="form__number">
+                  <label>
+                    <span>How many guests will be in your party? *</span>
+                    <input required type="number" name="guests" min="1" max="10" />
+                  </label>
+                </div>
               }
             </div>
             <button type="submit" form="rsvp" value="Submit">Submit</button>

@@ -127,7 +127,7 @@
   color: #c3dc8e;
 }
 
-.form__extra input[type=number] {
+.form__number input[type=number] {
   border: none;
   background: #e8ebed;
   padding: 7px;
@@ -137,7 +137,7 @@
   color: #5a5a5a;
 }
 
-.form__extra > label > span {
+.form__number span {
   display: block;
   margin-bottom: 10px;
 }
@@ -191,7 +191,7 @@
     margin-bottom: 0px;
   }
 
-  .form__extra > label > span {
+  .form__number span {
     display: inline;
     margin-bottom: 0px;
   }
