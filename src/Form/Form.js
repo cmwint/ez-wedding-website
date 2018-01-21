@@ -12,6 +12,9 @@ import './Form.css';
   }
 
   handleBlurEvent = (e) => {
+    if(e.target.value !== '') {
+      return (e.target.name === 'firstname') ? this.setState({activeFirst: true}) : this.setState({activeLast: true})
+    }
     return (e.target.name === 'firstname') ? this.setState({activeFirst: false}) : this.setState({activeLast: false})
   }
   
@@ -21,9 +24,8 @@ import './Form.css';
   handleInputFilled = (e) => {
     if(e.target.value !== '') {
       return (e.target.name === 'firstname') ? this.setState({activeFirst: true}) : this.setState({activeLast: true})
-    } else {
-      return (e.target.name === 'firstname') ? this.setState({activeFirst: false}) : this.setState({activeLast: false})
     }
+    return (e.target.name === 'firstname') ? this.setState({activeFirst: false}) : this.setState({activeLast: false})
   }
 
   handleOptionChange = (e) => {
@@ -36,22 +38,25 @@ import './Form.css';
     return (
       <div className="form">
         <div className="form__inner">
+          <h2>RSVP, please</h2>
           <form>
             <div className="form__names">
               <label className={this.state.activeFirst ? 'active' : ''}>
-                <span>First name</span>
+                <span>First name *</span>
                 <input
                   type="text"
                   name="firstname"
+                  required
                   onBlur={this.handleBlurEvent}
                   onFocus={this.handleFocusEvent}
                   onChange={this.handleInputFilled} />
               </label>
               <label className={this.state.activeLast ? 'active' : ''}>
-                <span>Last name</span>
+                <span>Last name *</span>
                 <input
                   type="text"
                   name="lastname"
+                  required
                   onBlur={this.handleBlurEvent}
                   onFocus={this.handleFocusEvent}
                   onChange={this.handleInputFilled} />
@@ -60,17 +65,15 @@ import './Form.css';
             <div className="form__extra">
               <div className="form__attendance">
                 <span>Will you be attending?</span>
-                <label>
+                <label className={this.state.attendingOption === 'yes' ? 'active' : ''}>
                   <input type="radio"
                   name="attendance" value="yes"
-                  checked={this.state.attendingOption === 'yes'}
                   onChange={this.handleOptionChange}/>
                   <span>Yes</span>
                 </label>
-                <label>
+                <label className={this.state.attendingOption === 'no' ? 'active' : ''}>
                   <input type="radio"
                   name="attendance" value="no"
-                  checked={this.state.attendingOption === 'no'}
                   onChange={this.handleOptionChange}/>
                   <span>No</span>
                 </label>

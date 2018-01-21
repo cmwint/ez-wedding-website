@@ -7,7 +7,7 @@ class Facts extends Component {
     return (
       <div className="facts">
         <h2>Did you know?</h2>
-        <Carousel showArrows={false} dynamicHeight={true} infiniteLoop autoPlay>
+        <Carousel showThumbs={false} showArrows={false} dynamicHeight={true} infiniteLoop autoPlay>
             <div>
                 <p>Zach and Emily have three cats, Remy, Joe and Penny</p>
             </div>

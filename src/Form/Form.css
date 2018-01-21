@@ -6,14 +6,91 @@
 .form__inner {
   max-width: 1000px;
   margin: auto;
+}
+.form__inner > h2 {
+  margin: 0 0 30px;
+  font-size: 36px;
   text-align: center;
+  color: #5a5a5a;
+  text-transform: uppercase;
 }
 
 .form__names {
-  position: relative;
+  margin-bottom: 20px;
 }
+
+.form__names label {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+.form__names label.active span {
+  top: -23px;
+  font-size: 13px;
+}
+
 .form__names label span {
   position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  text-align: left;
+  transition: 200ms;
+}
+
+.form__names input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #e8ebed;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.form__extra {
+  margin: 0 15px;
+}
+
+.form__attendance {
+  margin-bottom: 10px;
+}
+
+.form__attendance label {
+  position: relative;
+  margin-left: 20px;
+}
+
+.form__attendance label.active:after {
+  display: inline-block;
+}
+
+.form__attendance input {
+  display: none;
+}
+
+.form__attendance label span {
+  padding-left: 30px;
+}
+
+.form__attendance label:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e8ebed;
+}
+
+.form__attendance label:after {
+  content: '✔';
+  position: absolute;
+  left: 4px;
+  display: none;
+  color: #c3dc8e;
 }
 
 @media (min-width: 400px) {

@@ -17,7 +17,7 @@ class Details extends Component {
             <h4>5:00pm</h4>
             <p>
               At Ralston’s Crossing Chapel
-              <a href="https://www.google.com/maps/place/Ralston%E2%80%99s+Crossing+Event+Center/@39.8311025,-105.1666335,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8f038f837b1f:0x3bba13873185cfec!8m2!3d39.8311025!4d-105.1644448" target="_blank">
+              <a href="https://www.google.com/maps/place/Ralston%E2%80%99s+Crossing+Event+Center/@39.8311025,-105.1666335,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8f038f837b1f:0x3bba13873185cfec!8m2!3d39.8311025!4d-105.1644448" target="_blank" rel="noopener noreferrer">
                 7400 Indiana St, Arvada, Colorado 80007
               </a>
             </p>

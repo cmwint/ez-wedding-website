@@ -8,8 +8,12 @@
   max-width: 600px;
   margin: auto;
 }
-.intro span {
-  font-size: 40px;
+.intro h2 {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+  color: #5a5a5a;
+  text-transform: uppercase;
 }
 .intro svg {
   display: block;
