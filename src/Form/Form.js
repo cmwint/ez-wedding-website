@@ -38,8 +38,9 @@ import './Form.css';
     return (
       <div className="form">
         <div className="form__inner">
-          <h2>RSVP, please</h2>
-          <form>
+          <h2>We'd love for you to join us!</h2>
+          <h3>Please RSVP here</h3>
+          <form id="rsvp">
             <div className="form__names">
               <label className={this.state.activeFirst ? 'active' : ''}>
                 <span>First name *</span>
@@ -80,11 +81,12 @@ import './Form.css';
               </div>
               {this.state.attendingOption === 'yes' &&
                 <label>
-                  <span>How many guests will be in your party?</span>
-                  <input type="number" name="guests" min="1" max="10" />
+                  <span>How many guests will be in your party? *</span>
+                  <input required type="number" name="guests" min="1" max="10" />
                 </label>
               }
             </div>
+            <button type="submit" form="rsvp" value="Submit">Submit</button>
           </form>
         </div>
       </div>
