@@ -1,0 +1,23 @@
+{
+  "name": "ez-wedding-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-responsive-carousel": "^3.1.30"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "http://138.197.193.56/ez-wedding-website/",
+  "proxy": "http://localhost:5000/"
+}

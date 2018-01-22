@@ -1,20 +1,16 @@
 {
-  "name": "ez-wedding-website",
-  "version": "0.1.0",
-  "private": true,
+  "name": "wedding-website",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-responsive-carousel": "^3.1.30"
+    "express": "^4.16.2",
+    "nodemon": "^1.14.11"
   },
   "devDependencies": {
-    "react-scripts": "1.0.17"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "homepage": "http://138.197.193.56/ez-wedding-website/"
+    "concurrently": "^3.5.0"
+  }
 }
