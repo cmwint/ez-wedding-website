@@ -25,7 +25,18 @@
   margin-top: 60px;
 }
 
-.registry__inner img {
-  max-height: 100px;
+.registry__inner a #path8,
+.registry__inner a #path10 {
+  fill: white;
+  transition: 200ms;
+}
+
+.registry__inner a:hover #path8,
+.registry__inner a:hover #path10 {
+  fill: #ff9733
+}
+
+.registry__inner svg {
+  max-height: 60px;
   max-width: 100%;
 }

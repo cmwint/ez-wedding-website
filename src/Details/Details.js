@@ -37,7 +37,7 @@ class Details extends Component {
             </div>
             <h2>Music</h2>
             <h4>7:00pm</h4>
-            <p>Request a song at the wedding!</p>
+            <p>Request a song at the wedding! (Include it in your RSVP form down below!)</p>
           </div>
         </div>
       </div>
