@@ -7,20 +7,18 @@ class Party extends Component {
       <div className="party">
         <div className="party__inner">
           <div className="party__single">
-            Maids of Honor:
-            Mho Winthrop
-            Corinne Winthrop
-            Bridesmaids 
-            Rebecca Howard
-            Shanna Brown
+            <h2>Bridesmaids</h2>
+            <p>Mho Winthrop</p>
+            <p>Corinne Winthrop</p>
+            <p>Rebecca Howard</p>
+            <p>Shanna Brown</p>
           </div>
           <div className="party__single">
-            Best Man:
-            Groomsmen:
-            Jake Ancona
-            Noel Browning
-            Willie Wright
-            Zach Grunder
+            <h2>Groomsmen</h2>
+            <p>Jake Ancona</p>
+            <p>Noel Browning</p>
+            <p>Willie Wright</p>
+            <p>Zach Grunder</p>
           </div>
         </div>
       </div>
