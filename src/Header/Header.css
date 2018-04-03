@@ -1,4 +1,9 @@
+.Wedding-header {
+  height: 100vh;
+  min-height: 550px;
+}
 .header {
+  height: 100vh;
   text-align: center;
 }
 .header header {
@@ -8,6 +13,7 @@
   color: #c3dc8e;
   padding: 40px 20px;
   min-height: 500px;
+  height: 100%;
 }
 .header__inner {
   margin-top: 0px;
