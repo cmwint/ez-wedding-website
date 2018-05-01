@@ -22,7 +22,22 @@
 }
 
 .registry__wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 60px;
+}
+
+.registry__inner a {
+  display: inline-block;
+  width: 170px;
+  margin: 0px;
+}
+
+@media (min-width: 430px) {
+  .registry__inner a {
+    margin: 0 50px;
+  }
 }
 
 .registry__inner a #path8,
@@ -39,4 +54,13 @@
 .registry__inner svg {
   max-height: 60px;
   max-width: 100%;
+  fill: white;
+}
+
+.bbb-logo {
+  transition: fill 200ms;
+}
+
+.bbb-logo:hover {
+  fill: #495ba2
 }
